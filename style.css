@@ -1,0 +1,148 @@
+/* Скидання параметрів */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-size: 12px;
+}
+
+/* @media (max-width: 1087px) {
+   [class*="__container"] {
+       max-width: 970px;
+   }
+} */
+
+/* ==================================================== */
+
+/* TABLET +*/
+@media (max-width: 991.98px) {
+   .header__container {
+       max-width: 750px;
+   }
+}
+
+/* MOBILE +*/
+@media (max-width: 767.98px) {
+   .header__container {
+       max-width: none;
+   }
+}
+
+/* MOBILE SMALL +*/
+@media (max-width: 479.98px) {
+   .header__top {
+      margin-top: -50px;
+      flex-direction: column;
+   }
+   .menu__list {
+      padding-top: 20px;
+   }
+   .menu__link {
+      font-size: 10px;
+      margin-left: -10px;
+   }
+}
+
+/* ==================================================== */
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+/* ==================================================== */
+/* Прижав футер до низу */
+
+/* .container {
+   padding: 0px 15px 0px 15px;
+   max-width: 1180px;
+   margin: 0 auto;
+} */
+
+.main {
+   flex: 1 1 auto;
+}
+
+/* ==================================================== */
+/* HEADER */
+.header__container {
+   padding: 0px 15px 0px 15px;
+   max-width: 1180px;
+   margin: 0 auto;
+}
+
+.header__top {
+   padding: 90px 0px 20px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__logo {
+   font-size: 30px;
+   font-family: 'Inconsolata', monospace;
+}
+
+.header__logo a:hover {
+   text-decoration: line-through;
+}
+
+.menu__list {
+   display: flex;
+   gap: 20px;
+}
+
+.menu__link {
+   color: #626262;
+   text-transform: uppercase;
+}
+
+.menu__link:hover {
+   text-decoration: underline;
+}
+
+.header__photo img{
+   width: 100%;
+}
+
+.header__photo img:hover{
+   opacity: 0.9;
+}
