@@ -40,13 +40,8 @@ body {
 
 body {
     font-size: 12px;
+    background-color: #fffffe;
 }
-
-/* @media (max-width: 1087px) {
-   [class*="__container"] {
-       max-width: 970px;
-   }
-} */
 
 /* ==================================================== */
 
@@ -107,6 +102,7 @@ body {
 }
 
 .container {
+   padding: 0px 15px 0px 15px;
    max-width: 880px;
    margin: 0px auto;
 }
@@ -137,6 +133,10 @@ body {
 .header__logo {
    font-size: 30px;
    font-family: 'Inconsolata', monospace;
+}
+
+.header__logo a {
+   color: #000;
 }
 
 .header__logo a:hover {
@@ -200,5 +200,64 @@ body {
 @media (max-width: 479.98px) {
    .photodiary__text {
       width: 90%;
+   }
+}
+
+/* ==================================================== */
+/* LIFESTYLE */
+
+.lifestyle {
+   margin-top: 40px;
+}
+
+.columns__row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px -10px;
+}
+
+.lifestyle__column {
+   flex: 0 1 50%;
+   padding: 0px 10px;
+   margin-bottom: 30px;
+}
+
+.lifestyle__image {
+   flex: 0 1 auto;
+}
+
+.lifestyle__image img{
+   width: 100%;
+}
+
+.lifestyle__image img:hover{
+   opacity: 0.9;
+}
+
+.lifestyle__title {
+   padding-top: 15px;
+   text-transform: uppercase;
+}
+
+.lifestyle__subtitle {
+   padding-top: 20px;
+}
+
+.lifestyle__text {
+   padding-top: 10px;
+}
+
+.padding__column {
+   padding-top: 50px;
+}
+
+@media (max-width: 479.98px) {
+   .lifestyle__column {
+      flex: 0 1 100%;
+      padding: 0px 10px;
+      margin-bottom: 30px;
+   }
+   .padding__column {
+      padding-top: 0px;
    }
 }
