@@ -267,8 +267,7 @@ body {
 
 .signup {
    margin-top: 50px;
-   background-color: #f0f0f0;;
-   /* height: 250px; */
+   background-color: #f0f0f0;
 }
 
 .signup__item {
@@ -346,4 +345,28 @@ body {
       transform: translateY(-15px);
       font-size: 10px;
    }
+}
+
+/* ==================================================== */
+/* SIGNUP */
+
+.footer__container {
+   padding: 100px 0px 100px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.actions-main__button {
+   text-align: center;
+   padding: 10px 48px;
+   color:#000;
+   transition: all 0.3s ease 0s;
+   font-family: 'Playfair Display', serif;
+   font-size: 16px;
+   border: 2px solid #626262;
+}
+
+.actions-main__button:hover {
+   border: 2px solid #b4ad9e;
+   color: #b4ad9e;
 }
